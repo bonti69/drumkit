@@ -1,6 +1,7 @@
 
 for(var i=0; i<document.querySelectorAll(".drum").length;i++){
   document.querySelectorAll("button")[i].addEventListener("click",function(){
+    console.log(this.innerHTML);
     makeSound(this.innerHTML);
     animation(this.innerHTML);
   });
