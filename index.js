@@ -1,12 +1,10 @@
 
 for(var i=0; i<document.querySelectorAll(".drum").length;i++){
   document.querySelectorAll("button")[i].addEventListener("click",function(){
-    alert(this.innerHTML);
     makeSound(this.innerHTML);
     animation(this.innerHTML);
   });
   document.querySelectorAll("button")[i].addEventListener("keydown",function(event){
-    alert(event.key);
     makeSound(event.key);
     animation(event.key);
   });
