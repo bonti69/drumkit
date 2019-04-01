@@ -5,6 +5,7 @@ for(var i=0; i<document.querySelectorAll(".drum").length;i++){
     animation(this.innerHTML);
   });
   document.querySelectorAll("button")[i].addEventListener("keydown",function(event){
+    console.log(event.key);
     makeSound(event.key);
     animation(event.key);
   });
